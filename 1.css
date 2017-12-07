@@ -1,0 +1,24 @@
+h1{
+	color: #0044FF;
+
+}
+h2
+{
+	color: rgb(0,255,120);
+
+}
+h3
+{
+
+	color:rgba(0,255,120,.5);
+}
+body
+{
+	background-color: cyan;
+	background-size: cover;
+}
+div{
+	border-color: pink;
+	border-width: 5px;
+	border-style: solid;
+}

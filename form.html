@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+</head>
+<body>
+	<form>
+		<h2>Register</h2>
+		<div>
+			<label for="f_name">First Name:</label>
+			<input type="name" id="f_name" placeholder="text" required>
+			<label for="l_name">last Name:</label>
+			<input type="name" id="l_name" required>
+		</div>
+		<div>	
+			<label for="gender_m">Male</label>
+			<input type="radio" name="gender" value="male" id="gender_m">
+			<label for="gender_f">Female</label>
+			<input type="radio" name="gender" value="female" id="gender_f">
+			<label for="gender_o">Others</label>
+			<input type="radio" name="gender" value="others" id="gender_o">
+		</div>
+		<div>	
+			<label for ="email">Email:</label>
+			<input type="email" name="email" id="email">
+			<label for ="Password">Password:</label>
+			<input type="Password"  id="Password"  name="Password" pattern=".{3,10}" required title=" 3 to 10 characters ">	
+		</div>
+		<div>
+			Birthday:	
+			<select name="month">
+				<option value="Month">Month</option>
+				<option value="January">Jan</option>
+				<option value="February">Feb</option>
+			</select>	
+			<select name="day">
+				<option value="day">Day</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+			</select>
+			<select name="Year">
+				<option value="Year">Year</option>
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+			</select>
+
+		<input type="submit" name="">
+		<a href=""></a>
+		
+
+	</form>
+	
+</body>
+</html>

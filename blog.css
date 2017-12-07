@@ -1,0 +1,45 @@
+.outer
+{
+	border:20px solid #bdc3c7;
+	margin:0% 20%;
+	padding:5px;
+}
+.date{
+	color: #3498db;
+	margin: 20px 20px;
+	letter-spacing: 0.2rem;
+	font-family:Source Sans Pro;
+
+}
+.topic{
+	font-weight: 900;
+	font-size: 30px;
+	color: #2c3e50;
+
+}
+.para{
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+	
+}
+.inner1{
+	border-bottom: 1px solid #bdc3c7;
+	margin: 20px 20px;
+	text-align: justify;
+  	text-justify: inter-word;
+  	font-weight: 400;
+  	font-size: 15px;
+
+}
+.inner2{
+	margin: 20px 20px;
+	text-align: justify;
+  	text-justify: inter-word;
+  	font-weight: 400;
+  	font-size: 15px;
+
+}
+body{
+	font-family:Source Sans Pro;
+	padding: 20px;
+}
