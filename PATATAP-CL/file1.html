@@ -6,9 +6,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
 	<script type="text/javascript" src="paper-full.js"></script>
 	<script type="text/paperscript" canvas="myCanvas">
-		var sound = new Howl({
-			  src: ['A/bubbles.mp3']
-			});
+		
 		function randomColor()
 			{
 				var r =Math.floor(Math.random()*256);
@@ -22,7 +20,13 @@
 
 		function onKeyDown(event)
 
-		{	
+		{	var mfiles = ['A/bubbles.mp3','A/clay.mp3',
+			'A/	confetti.mp3','A/glimmer.mp3','A/ufo.mp3',
+			'A/flash-3.mp3','A/veil.mp3','A/moon.mp3','A/prism-1.mp3',
+			'A/prism-2.mp3','A/prism-3.mp3','A/flash-3.mp3'];
+			var sound = new Howl({
+			  src: [mfiles[Math.floor(Math.random()*mfiles.length)]]
+			});
 			sound.play();
 			var maxPoint = new Point(view.size.width,view.size.height);
 			var random =  Point.random();
