@@ -10,8 +10,8 @@ var express    = require("express"),
     Comment    = require("./models/comment"),
     methodOverride = require("method-override"),
     seedDB     = require("./seeds"); 
-var campgroundRoutes = require("./routes/campground"),
-    commentRoutes = require("./routes/coment"),
+var campgroundRoutes = require("./routes/campground");
+var commentRoutes = require("./routes/coment"),
     indexRoutes = require("./routes/index");
     
 
