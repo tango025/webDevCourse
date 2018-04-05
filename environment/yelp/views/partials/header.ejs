@@ -19,7 +19,7 @@
                         <ul class  = "nav navbar-nav navbar-right">
                             <% if(!currentUser){ %>
                                 <li> <a href = "/login">LOG IN</a></li>
-                                <li> <a href = "/register">SIGN IN</a></li>
+                                <li> <a href = "/register">SIGN UP</a></li>
                             <% }else{ %>
                                 <li><a href = "">Hey <%= currentUser.username.toUpperCase()%></a></li>
                                 <li> <a href = "/logout">LOGOUT</a></li>

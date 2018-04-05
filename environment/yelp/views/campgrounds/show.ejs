@@ -8,6 +8,9 @@
                 <li class = "list-group-item ">Info 2</li>
                 <li class = "list-group-item ">Info 3</li>
             </div>
+            <div id  = "map" style = "width: 100%;height: 300px;background-color: grey;">
+                
+            </div>
         </div>
         <div class = "col-md-9">
             <div class = "thumbnail">
@@ -54,6 +57,63 @@
         </div>
     </div>
 </div>
+<script>
+    function initMap(){
+	var options = {
+		zoom: 1,
+		center : {lat: 22.798507, lng: 75.8563798}
+	}
+	var map = new 
+	google.maps.Map(document.getElementById('map'),options);
+	
+	var markers = [
+  {
+    coords:{lat : 22.84812355,lng : 75.95492},
+    iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+    content:'Astitva nivas<br>9009988889'
+    },
+    {
+    coords:{lat: 37.0902, lng: 95.7129}
+    },
+    {
+    coords:{lat:61.5240,lng:105.3188},
+    iconImage : 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+    content:'umeed nivas<br>7708842433'
+    },
+    {
+    coords:{lat:55.7558,lng:37.6173},
+    iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+    content:'tarang nivas<br>8802706924'
+    },
+    {
+    coords:{lat:8.7832,lng:34.5085},
+    iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+    content:'krishna nivas<br> 8152343421' 
+    },
+    {
+    coords:{lat:54.5260,lng:15.2551},
+    iconImage :'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+    content:'roshini nivas<br>7312550823'
+    }];
+      addMarker(markers[Math.floor(Math.random() * 5)]);
+
+	function addMarker(props){
+     var marker = new google.maps.Marker({
+        position :props.coords,
+        map : map,
+        icon:props.iconImage
+      });}
+//       if(props.content){
+//       var infoWindow = new google.maps.InfoWindow({
+//         content: props.content
+//       });
+//       marker.addListener('click',function(){
+//         infoWindow.open(map,marker);
+//       });
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkEhvvnPU0UcGbxqF2y5aI3vYN1jtBKIE&callback=initMap">
+</script>
 
 
 <a class = "btn btn-info "href = "/campgrounds">Go back</a>
